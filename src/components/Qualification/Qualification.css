@@ -1,0 +1,116 @@
+.qfc-container {
+  max-width: 768px;
+}
+
+.qfc-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.qfc-button {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--title-color);
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.qfc-button:hover {
+  color: var(--title-color-dark);
+}
+
+.qfc-icon {
+  font-size: 1.8rem;
+  margin-right: 0.25rem;
+}
+
+.qfc-active {
+  color: var(--title-color-dark);
+}
+
+.qfc-section {
+  display: grid;
+  grid-template-columns: 0.5fr;
+  justify-content: center;
+}
+
+.qfc-content {
+  display: none;
+}
+
+.qfc-content-active {
+  display: block;
+}
+
+.qfc-data {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  column-gap: 1.5rem;
+}
+
+.qfc-title {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.qfc-subtitle {
+  display: inline-block;
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.qfc-calender {
+  font-size: 0.875rem;
+}
+
+.qfc-rounder {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+}
+
+.qfc-line {
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: var(--text-color);
+  transform: translate(6px, -7px);
+}
+
+@media screen and (max-width: 992px) {
+  .qfc-container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .qfc-title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .qfc-container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .qfc-section {
+    grid-template-columns: initial;
+  }
+
+  .qfc-button {
+    margin: 0 0.75rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .qfc-data {
+    gap: 0.5rem;
+  }
+}
